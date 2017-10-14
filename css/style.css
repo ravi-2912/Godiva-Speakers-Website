@@ -147,7 +147,7 @@ nav {
     content: '';
     width: 100%;
     height: 3px;
-    background: #007bff;    
+    background: #772432;  
     -webkit-animation: scaleLeftRight 500ms;
     -moz-animation: scaleLeftRight 500ms;
     -ms-animation: scaleLeftRight 500ms;
@@ -350,6 +350,10 @@ nav {
     z-index: 0;
   }
 
+#training-material {
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
 
 /********   Contact Us section styles    ********/
 .contact-address li{
