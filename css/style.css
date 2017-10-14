@@ -41,6 +41,10 @@ nav {
     transition: font 500ms;
 }
 
+.navbar-nav {
+    letter-spacing: 0.03rem;
+}
+
 .navbar-nav .active a:after {
     display: block;
     content: '';
