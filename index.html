@@ -195,40 +195,42 @@
                     <div class="col-md-6">
                         <h3 class="heading-2">LEAVE A MESSAGE</h3>
                         <p>Drop us a messgae and one of our club officers will get in touch with you shortly.</p>
-                        <form method="post" id="contact-form" class="form-horizontal contact-form" novalidate>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label for="contact-name" class="control-label sr-only">Name</label>
-                                        <input type="text" class="form-control" id="contact-name" name="name" placeholder="Name" required>
+                        <form id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="contact-name" class="col-form-label sr-only">Name</label>
+                                    <input type="text" class="form-control" id="contact-name" placeholder="Name" name="name" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="contact-email" class="col-form-label sr-only">Email</label>
+                                    <input type="email" class="form-control" id="contact-email" placeholder="Email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-subject" class="col-form-label sr-only">Subject</label>
+                                <input type="text" class="form-control" id="contact-subject" placeholder="Subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-message" class="col-form-label sr-only">Message</label>
+                                <textarea class="form-control" id="contact-message" name="message" rows="5" cols="30" placeholder="Message" required></textarea>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="contact-subscribe">
+                                            <input id="contact-subscribe" class="form-check-input" type="checkbox" checked> 
+                                            Subscribe to our newsletter
+                                        </label>
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label for="contact-email" class="control-label sr-only">Email</label>
-                                        <input type="email" class="form-control" id="contact-email" name="email" placeholder="Email" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="contact-subject" class="control-label sr-only">Subject</label>
-                                <div class="col-sm-12">
-                                    <input type="text" class="form-control" id="contact-subject" name="subject" placeholder="Subject">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="contact-message" class="control-label sr-only">Message</label>
-                                <div class="col-sm-12">
-                                    <textarea class="form-control" id="contact-message" name="message" rows="5" cols="30" placeholder="Message" required></textarea>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-sm-12">
+                                <div class="form-group col-md-6">
                                     <button type="submit" id="submit-button" class="btn btn-accent">Submit Message</button>
                                 </div>
                             </div>
-                            <input type="hidden" name="msg-submitted" id="msg-submitted" value="true">
+                            
+                            
                         </form>
+                        
                     </div>
                 </div>
             </div>
