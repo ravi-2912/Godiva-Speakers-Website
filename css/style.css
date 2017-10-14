@@ -102,6 +102,10 @@ nav {
     margin: 15px 0;
 }
 
+.nav-shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .navbar-brand {
     font-size: 2rem;
     -webkit-transition: font 500ms;  /* Safari, Chrome, Android, iOS */
@@ -120,7 +124,7 @@ nav {
     content: '';
     width: 100%;
     height: 3px;
-    background: #659419;    
+    background: #007bff;    
     -webkit-animation: scaleLeftRight 500ms;
     -moz-animation: scaleLeftRight 500ms;
     -ms-animation: scaleLeftRight 500ms;

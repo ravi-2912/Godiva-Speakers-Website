@@ -4,9 +4,11 @@ $(window).scroll(function() {
     if($(document).scrollTop() > 100) {
         $(".nav-margin").css("margin", "0");
         $(".navbar-brand").css("font-size", "1.5rem");
+        $("nav").removeClass("navbar-dark").addClass("navbar-light bg-light nav-shadow");
     } else {
         $(".nav-margin").css("margin", "15px 0");
         $(".navbar-brand").css("font-size", "2.25rem");
+        $("nav").removeClass("navbar-light bg-light nav-shadow").addClass("navbar-dark");
     }
 });
 
