@@ -16,8 +16,51 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
+    font-size: 1.125rem;
     margin-bottom: 1.6rem;
 }
+
+.introheading {
+    color: #772432;
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.subheading {
+    color: #004165;
+    padding-top: 5px;
+}
+
+.heading-2 {
+    color: #004165;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+
+.separator {
+    font-size: 2rem;
+    color: lightgrey;
+}
+
+.btn {
+    margin: 1rem;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 100;
+    font-size: 1.125rem;
+}
+
+section .container:first-of-type {
+    padding-bottom: 20px;
+}
+
+.display-4, .display-5 {
+    font-weight: 100;
+}
+
 
 /********   Navbar styles    ********/
 nav {
@@ -211,17 +254,22 @@ nav {
     box-shadow: 0 0 20px black;
 }
 
-.jumbotron h1 {
-    font-weight: 100;
-}
-
 .jumbotron-control {
     margin: 3rem 0;    
     line-height: 1.5;
 }
 
-.jumbotron-control .btn {
-    margin: 0 1rem;
-    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 100;
+/********   About section styles    ********/
+
+.tm-value-h4 {
+    font-family: "Enriqueta", serif;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: rgba(119, 36, 50, 0.4);
+    
+}
+
+#about ul li {
+    margin-bottom: 35px;
 }
