@@ -107,7 +107,7 @@ nav {
 }
 
 .navbar-brand {
-    font-size: 2rem;
+    font-size: 2.25rem;
     -webkit-transition: font 500ms;  /* Safari, Chrome, Android, iOS */
     -moz-transition: font 500ms;     /* Firefox */
     -ms-transition: font 500ms;      /* Internet Explorer */
