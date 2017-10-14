@@ -167,6 +167,8 @@ nav {
     object-fit: none;
     object-position: center;
     height: 100vh;
+    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+    filter: blur(5px);
 }
 
 #carousel-container {
@@ -265,7 +267,7 @@ nav {
 
 .carousel-item .container .jumbotron {
     z-index: 9;
-    background: rgba(0,0,0,0.8);
+    background: none;
     color: white;
     width: auto;
     padding: 3rem;
