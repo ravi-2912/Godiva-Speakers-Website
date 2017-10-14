@@ -340,6 +340,15 @@ nav {
     margin-bottom: 35px;
 }
 
+/********   Education section styles    ********/
+.education-item i {
+    font-size: 8em;
+    color: rgba(119, 36, 50, 0.2);
+    position: absolute;
+    top: 15px;
+    right: 0;
+    z-index: 0;
+  }
 
 
 /********   Contact Us section styles    ********/
