@@ -263,22 +263,36 @@ nav {
     }
 }
 
-.carousel-item .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.jumbotron {
-    background: rgba(0,0,0,0.6);
+.carousel-item .container .jumbotron {
+    z-index: 9;
+    background: rgba(0,0,0,0.8);
     color: white;
+    width: auto;
+    padding: 3rem;
 }
 
 .jumbotron-control {
     margin: 3rem 0;    
     line-height: 1.5;
+}
+
+#hero1 {
+    position: absolute;
+    top: 40%;
+    left: 10%;    
+}
+
+#hero2 {
+    position: absolute;
+    top: 20%;
+    right: 10%;    
+}
+
+#hero3 {
+    position: absolute;
+    top: 20%;
+    left:50%;
+    transform: translateX(-50%);
 }
 
 /********   About section styles    ********/
