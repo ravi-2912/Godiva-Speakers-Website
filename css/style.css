@@ -24,7 +24,7 @@ body section:not(#home) {
     padding-top: 80px;
 }
 
-.introheading {
+.red, .introheading {
     color: #772432;
 }
 
@@ -33,8 +33,12 @@ body section:not(#home) {
     font-weight: 300;
 }
 
-.subheading {
+.blue, .subheading {
     color: #004165;
+    padding-top: 5px;
+}
+
+.subheading {
     padding-top: 5px;
 }
 
@@ -52,9 +56,28 @@ body section:not(#home) {
 
 .btn {
     margin: 1rem;
-    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 100;
-    font-size: 1.125rem;
+    font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    padding: 12px 18px;
+    border-radius: 3px;
+    letter-spacing: 0.1em;
+    color: white;
+}
+
+.btn:hover {
+    color: white;
+}
+
+.btn-red {
+    background: #772432;
+    color: white;
+}
+
+.btn-blue {
+    background: #004165;
+    color: white;
 }
 
 section .container:first-of-type {
@@ -365,6 +388,11 @@ nav {
 footer {
     padding: 40px 0;
     background-color: #3B3B3B;
+}
+
+footer nav {
+    background: none;
+    box-shadow: none;
 }
 
 .nav-footer {
