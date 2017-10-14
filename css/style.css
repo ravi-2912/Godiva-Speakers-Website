@@ -1,0 +1,124 @@
+/********   Navbar styles    ********/
+nav {
+    -webkit-transition: all 500ms;  /* Safari, Chrome, Android, iOS */
+    -moz-transition: all 500ms;     /* Firefox */
+    -ms-transition: all 500ms;      /* Internet Explorer */
+    -o-transition: all 500ms;       /* Opera */
+    transition: all 500ms;
+}
+
+.nav-margin {
+    margin: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    -webkit-transition: font 500ms;  /* Safari, Chrome, Android, iOS */
+    -moz-transition: font 500ms;     /* Firefox */
+    -ms-transition: font 500ms;      /* Internet Explorer */
+    -o-transition: font 500ms;       /* Opera */
+    transition: font 500ms;
+}
+
+.navbar-nav .active a:before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #659419;
+    position: relative;
+    bottom: -1.75rem;
+    -webkit-animation: scaleLeftRight 500ms;
+    -moz-animation: scaleLeftRight 500ms;
+    -ms-animation: scaleLeftRight 500ms;
+    -o-animation: scaleLeftRight 500ms;
+    animation: scaleLeftRight 500ms;
+    -webkit-transform-origin: 0%;
+    -moz-transform-origin: 0%;
+    -ms-transform-origin: 0%;
+    -o-transform-origin: 0%;
+    transform-origin: 0;
+}
+
+@-webkit-keyframes scaleLeftRight {
+    0% {
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+}
+  
+@keyframes scaleLeftRight {
+    0% {
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0)
+    }
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}
+
+/*.navbar-nav > li.active > a:before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #004165;
+    position: absolute;
+    bottom: -5px;
+    -webkit-animation: scaleLeftRight .3s;
+    animation: scaleLeftRight .3s;
+    -webkit-transform-origin: 0%;
+    transform-origin: 0;
+}*/
+
+/********   Carousel styles    ********/
+#carousel {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 50px;
+}
+
+#carousel img {
+    object-fit: none;
+    object-position: center;
+    height: 100vh;
+}
+
+#carousel-container {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 50px;
+}
+
+[class*="carousel-control-"] {
+    font-size: 1.5em;
+    -webkit-transition: font 300ms;  /* Safari, Chrome, Android, iOS */
+    -moz-transition: font 250ms;     /* Firefox */
+    -ms-transition: font 250ms;      /* Internet Explorer */
+    -o-transition: font 250ms;       /* Opera */
+    transition: font 250ms;
+}
+
+[class*="carousel-control-"]:hover {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.carousel-indicators li {
+    width: 16px;
+    height: 16px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.carousel-indicators li:hover {
+    cursor: pointer;
+}
