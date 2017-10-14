@@ -289,14 +289,63 @@ nav {
     font-size: 2.375rem;
     vertical-align: middle;
 }
+
 .contact-address li span {
     padding-left: 15px; 
 }
 
 #contact .social-icons a {    
-    border-radius: 2px;
-    background: lightgrey;
-    color: gray;
-    padding: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
     vertical-align: middle;
+    text-decoration: none;
+    border-radius: 3px;
+    background: #f7f7f7;
+    color: #555;
+    padding: 8px 12px;;
+    vertical-align: middle;
+    border: 1px solid #f7f7f7;
+    margin: auto 5px;
+}
+
+#contact .social-icons a:hover {
+    border: 1px solid #aaa;
+}
+
+
+/********   Footer styles    ********/
+footer {
+    padding: 40px 0;
+    background-color: #3B3B3B;
+}
+
+.nav-footer {
+    text-align: center;
+    margin: 10px 0;
+    padding-bottom: 15px;
+}
+
+.nav-footer li {
+    margin: 0 20px;    
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.nav-footer li a {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.nav-footer li a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    margin: 0;
+    font-size: 14px;
+    color: #a0a0a0;
+    text-align: center;
 }
