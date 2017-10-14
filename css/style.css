@@ -1,5 +1,5 @@
 /********   Common styles    ********/
-@import url('https://fonts.googleapis.com/css?family=Enriqueta|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Enriqueta:400,700|Roboto:100,300,400');
 
 body {
     font-family: "Enriqueta", serif;
@@ -10,6 +10,8 @@ body {
   
 h1, h2, h3, h4, h5, h6 {
     font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+    /*font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;*/
+    font-weight: 300;
     margin: 0;
 }
 
@@ -192,4 +194,34 @@ nav {
     100% {
         transform: translateY(0);
     }
+}
+
+.carousel-item .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.jumbotron {
+    background: rgba(0,0,0,0.25);
+    color: white;
+    -webkit-box-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px black;
+}
+
+.jumbotron h1 {
+    font-weight: 100;
+}
+
+.jumbotron-control {
+    margin: 3rem 0;    
+    line-height: 1.5;
+}
+
+.jumbotron-control .btn {
+    margin: 0 1rem;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 100;
 }
