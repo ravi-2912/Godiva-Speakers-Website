@@ -1,5 +1,26 @@
+/********   Common styles    ********/
+@import url('https://fonts.googleapis.com/css?family=Enriqueta|Roboto');
+
+body {
+    font-family: "Enriqueta", serif;
+    font-size: 1.125rem;
+    color: #444;
+    line-height: 1.9;
+}
+  
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+}
+
+p {
+    margin-bottom: 1.6rem;
+}
+
 /********   Navbar styles    ********/
 nav {
+    font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    line-height: 1.5;
     -webkit-transition: all 500ms;  /* Safari, Chrome, Android, iOS */
     -moz-transition: all 500ms;     /* Firefox */
     -ms-transition: all 500ms;      /* Internet Explorer */
