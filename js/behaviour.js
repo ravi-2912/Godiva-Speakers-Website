@@ -10,10 +10,4 @@ $(window).scroll(function() {
     }
 });
 
-// Change carousel height after page loads first time
-$("#carousel-container").css("height", $(window).height().toString() + "px");
-// Change carousel height to viewport height by checking the resize event
-$(window).resize(function() {
-    $("#carousel-container").css("height", $(window).height().toString() + "px");
-});
 
