@@ -272,10 +272,8 @@ nav {
 }
 
 .jumbotron {
-    background: rgba(0,0,0,0.25);
+    background: rgba(0,0,0,0.6);
     color: white;
-    -webkit-box-shadow: 0 0 20px black;
-    box-shadow: 0 0 20px black;
 }
 
 .jumbotron-control {
