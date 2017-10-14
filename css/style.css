@@ -20,14 +20,12 @@ nav {
     transition: font 500ms;
 }
 
-.navbar-nav .active a:before {
+.navbar-nav .active a:after {
     display: block;
     content: '';
     width: 100%;
     height: 3px;
-    background: #659419;
-    position: relative;
-    bottom: -1.75rem;
+    background: #659419;    
     -webkit-animation: scaleLeftRight 500ms;
     -moz-animation: scaleLeftRight 500ms;
     -ms-animation: scaleLeftRight 500ms;
@@ -45,6 +43,7 @@ nav {
       -webkit-transform: scaleX(0);
       transform: scaleX(0);
     }
+
     100% {
       -webkit-transform: scaleX(1);
       transform: scaleX(1);
@@ -56,25 +55,12 @@ nav {
         -webkit-transform: scaleX(0);
         transform: scaleX(0)
     }
+
     100% {
         -webkit-transform: scaleX(1);
         transform: scaleX(1);
     }
 }
-
-/*.navbar-nav > li.active > a:before {
-    display: block;
-    content: '';
-    width: 100%;
-    height: 3px;
-    background: #004165;
-    position: absolute;
-    bottom: -5px;
-    -webkit-animation: scaleLeftRight .3s;
-    animation: scaleLeftRight .3s;
-    -webkit-transform-origin: 0%;
-    transform-origin: 0;
-}*/
 
 /********   Carousel styles    ********/
 #carousel {
@@ -93,6 +79,7 @@ nav {
     padding-left: 0;
     padding-right: 0;
     margin-bottom: 50px;
+    height: 100vh;
 }
 
 [class*="carousel-control-"] {
@@ -121,4 +108,63 @@ nav {
 
 .carousel-indicators li:hover {
     cursor: pointer;
+}
+
+#mouse {
+    position: absolute;
+    left: 50%;
+    margin-left: -13px;
+    bottom: 5em;
+    z-index: 9;
+}
+
+#mouse svg {
+    display: block;
+}
+  
+#mouse svg rect {
+    stroke-dasharray: 120;
+    stroke: white;
+}
+
+#mouse i {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position: absolute;
+    width: 4px;
+    height: 10px;
+    left: 11px;
+    top: 11px;
+    background-color: #fff;
+    -webkit-animation: scrollBouncing 2s ease-out infinite;
+    animation: scrollBouncing 2s ease-out infinite;
+}
+  
+@keyframes scrollBouncing {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes scrollBouncing {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
