@@ -52,15 +52,19 @@ $(".navbar-nav li a, footer nav li a, .navbar-brand, #mouse a").on("click", func
 
 // Owl Carousel
 $(".owl-carousel").owlCarousel({
-    loop:true,
-    margin:15,
-    nav:true,
+    loop: true,
+    margin: 15,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout:2500,
+    autoplayHoverPause:true,
+    autoplaySpeed: 1000,
     responsive:{
-        992:{
-            items:2
+        992: {
+            items: 2
         },
         0: {
-            items:1
+            items: 1
         }
     }
 });
