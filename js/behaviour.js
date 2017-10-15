@@ -20,4 +20,34 @@ $(window).scroll(function() {
     }
 });
 
+// toggling active class for navbar menu
+$('.navbar-nav li').click(function(){
+    $('.navbar-nav li').removeClass('active');
+    $(this).addClass('active');
+});
 
+
+// smooth scrolling
+$(".navbar-nav li a, footer nav li a, .navbar-brand").on("click", function (e) {
+    e.preventDefault();
+
+    var spaceOffset = 10; // you may change this value as needed
+    $("html,body").animate(
+        {
+            scrollTop: $(this.hash).offset().top - spaceOffset
+        }, 
+        800
+    );
+});
+/*
+$(window).bind('load resize', function() {
+    if( $(window).width() < 769 ) {
+        // hide collapsible menu once menu item clicked on mobile 
+        $('.navbar-nav li a').on( 'click', function() {
+            if($(this).parents('.navbar-collapse.collapse').hasClass('in')) {
+                $('#main-navbar').collapse('hide');
+            }
+        });
+    }
+});
+*/
