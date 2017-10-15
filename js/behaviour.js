@@ -69,6 +69,55 @@ $(".owl-carousel").owlCarousel({
     }
 });
 
+// Change TM Manual images by fading in and out
+var Min = 1;
+var Max = 48;
+var oldArr = [-1, -1, -1, -1, -1, -1];
+var i = 1;
+var rand = function () {
+    return  Math.floor(Math.random() * (Max - Min + 1)) + Min;
+};
+var iter = function() {
+    var id = (i++).toString();
+    if (i < 10) {
+        id = "0" + id; 
+    }
+    return "img_src/" + id + ".jpg";
+};
+
+var manualImgArray = Array.apply(null, {length: Max}).map( Function.call, iter);
+var newArr = [-1, -1, -1, -1, -1, -1];
+
+oldArr = newArr.slice(); 
+
+setInterval(function(){
+    var l = 0;
+    while(l < 6){
+        var randomnumber = rand();
+        if(newArr.indexOf(randomnumber) > -1) continue;
+        newArr[l++] = randomnumber;
+    }
+    // UGLY CODE - RESOLVE THIS
+    $("#training-material img").eq(0).fadeOut(800, function() {
+        $("#training-material img").eq(0).attr("src",manualImgArray[newArr[0]]);
+        }).fadeIn(800);
+    $("#training-material img").eq(1).fadeOut(800, function() {
+        $("#training-material img").eq(1).attr("src",manualImgArray[newArr[1]]);
+        }).fadeIn(800);
+    $("#training-material img").eq(2).fadeOut(800, function() {
+        $("#training-material img").eq(2).attr("src",manualImgArray[newArr[2]]);
+        }).fadeIn(800);
+    $("#training-material img").eq(3).fadeOut(800, function() {
+        $("#training-material img").eq(3).attr("src",manualImgArray[newArr[3]]);
+        }).fadeIn(800);
+    $("#training-material img").eq(4).fadeOut(800, function() {
+        $("#training-material img").eq(4).attr("src",manualImgArray[newArr[4]]);
+        }).fadeIn(800);
+    $("#training-material img").eq(5).fadeOut(800, function() {
+        $("#training-material img").eq(5).attr("src",manualImgArray[newArr[5]]);
+        }).fadeIn(800);
+    
+}, 7000);
 /*
 $(window).bind('load resize', function() {
     if( $(window).width() < 769 ) {
