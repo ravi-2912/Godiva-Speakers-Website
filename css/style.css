@@ -147,7 +147,7 @@ nav {
     letter-spacing: 0.03rem;
 }
 
-.navbar-nav .active a:after {
+.navbar-nav  a.active:after {
     display: block;
     content: '';
     width: 100%;
