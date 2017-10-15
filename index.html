@@ -19,12 +19,16 @@
         <!--[if lt IE 8]><!-->
         <link rel="stylesheet" href="css/vendor/themify/ie7.css">
         <!--<![endif]-->
+
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="css/vendor/wow/animate.css">
     
     </head>
+
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-margin">
             <div class="container">
-                <a class="navbar-brand" href="#carousel-container">
+                <a class="navbar-brand" href="#home">
                     <span id="godiva"><b>Godiva</b></span>
                     <span id="speakers">Speakers</span>
                 </a>
@@ -42,19 +46,19 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#education">Education</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item display-none">
                             <a class="nav-link" href="#our-club">Our Club</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#membership">Membership</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item display-none">
                             <a class="nav-link" href="#news">News</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item display-none">
                             <a class="nav-link disabled" href="#login">Login</a>
                         </li>
                     </ul>
@@ -162,19 +166,19 @@
                     <div class="col-md-6">
                         <h3 class="heading-2">OUR VALUES</h3>
                         <ul class="list-unstyled">
-                            <li class="wow fadeInUp">
+                            <li class="wow fadeInUp" data-wow-delay="200ms">
                                 <h4 class="tm-value-h4">INTEGRITY</h4>
                                 <p class="tm-value-p">Be honest and truthfull in our dealings and inter-actions with our fellow members and guests. Expect the same from others.</p>
                             </li>
-                            <li class="wow fadeInUp" data-wow-delay="500ms">
+                            <li class="wow fadeInUp" data-wow-delay="400ms">
                                 <h4 class="tm-value-h4">RESPECT</h4>
                                 <p class="tm-value-p">Admire, recognise and appreciate our fellow members and guests, irrespective of difference in opinions. Respect all individual(s).</p>
                             </li>
-                            <li class="wow fadeInUp" data-wow-delay="1s">
+                            <li class="wow fadeInUp" data-wow-delay="600ms">
                                 <h4 class="tm-value-h4">SERVICE</h4>
                                 <p class="tm-value-p">Serve to help every member in our club to meet their personal and professional goals. Ensure being part of the support-system.</p>
                             </li>
-                            <li class="wow fadeInUp" data-wow-delay="1s">
+                            <li class="wow fadeInUp" data-wow-delay="800ms">
                                 <h4 class="tm-value-h4">EXCELLENCE</h4>
                                 <p class="tm-value-p">Be committed to the program, club meetings, core values and self development. Ensure members and guests obtain best experience.</p>
                             </li>
@@ -197,33 +201,42 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="education-item">
+                        <div class="education-item wow fadeIn" data-wow-delay="300ms">
                             <h3 class="heading-2">PUBLIC SPEAKING</h3>
                             <p>Using the Toastmasters International <a href="https://www.toastmasters.org/education/education-program" target="_blank">structured manual series</a>, Godiva Speakers offers members opportunities to hone their public speaking and presentation skills in a lively and supportive environment.</p>
-                            <i class="ti-microphone-alt"></i>
+                            <div class="wow fadeInUp" data-wow-delay="600ms">
+                                <i class="ti-microphone-alt"></i>
+                            </div>
+                            
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="education-item">
+                        <div class="education-item wow fadeIn" data-wow-delay="600ms">
                             <h3 class="heading-2">LEADERSHIP</h3>
                             <p>Using the Toastmasters International <a href="https://www.toastmasters.org/education/pathways" target="_blank">leadership guides</a>, Godiva Speakers offers members opportunities to serve in <a href="">meeting roles</a>, as mentors, and as club officers, to improve leadership skills in a dynamic community of peers.</p>
-                            <i class="ti-cup"></i>
+                            <div class="wow fadeInUp" data-wow-delay="900ms">
+                                <i class="ti-cup"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="education-item">
+                        <div class="education-item wow fadeIn" data-wow-delay="900ms">
                             <h3 class="heading-2">FEEDBACK</h3>
                             <p>Using the Toastmasters International <a href="" target="_blank">meeting and competition protocols</a>, Godiva Speakers offers members opportunities to learn to give and receive essential feedback in impromptu speaking, communication, speech writing, and to develop intelligence.</p>
-                            <i class="ti-write"></i>
+                            <div class="wow fadeInUp" data-wow-delay="1200ms">
+                                <i class="ti-write"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="education-item">
+                        <div class="education-item wow fadeIn" data-wow-delay="1200ms">
                             <h3 class="heading-2">NETWORKING</h3>
                             <p>Within the Toastmasters International there are number of <a href="https://www.toastmasters.org/events" target="_blank">international and national events</a> in which Godiva Speakers offers members opportunities to participate and thereby support a friendly, social and professional networking environmen.</p>
-                            <i class="ti-world"></i>
+                            <div class="wow fadeInUp" data-wow-delay="1500ms">
+                                <i class="ti-world"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -324,11 +337,11 @@
                         <li class="list-inline-item"><a href="#home">Home</a></li>
                         <li class="list-inline-item"><a href="#about">About</a></li>
                         <li class="list-inline-item"><a href="#education">Education</a></li>
-                        <li class="list-inline-item"><a href="#our-club">Our Club</a></li>
+                        <li class="list-inline-item"><a href="#our-club display-none">Our Club</a></li>
                         <li class="list-inline-item"><a href="#membership">Membership</a></li>
-                        <li class="list-inline-item"><a href="#news">News</a></li>
+                        <li class="list-inline-item"><a href="#news display-none">News</a></li>
                         <li class="list-inline-item"><a href="#contact">Contact</a></li>
-                        <li class="list-inline-item"><a href="#login">Login</a></li>
+                        <li class="list-inline-item"><a href="#login display-none">Login</a></li>
                     </ul>
                 </nav>
                 <p class="copyright">
@@ -349,6 +362,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
+        <!-- WOW JavaScrip -->
+        <script src="js/vendor/wow/wow.js"></script>
+        <script>new WOW().init()</script>
         <!-- Godiva Speakers JavaScript -->
         <script src="js/behaviour.js"></script>
     </body>

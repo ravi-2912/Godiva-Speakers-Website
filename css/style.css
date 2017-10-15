@@ -24,6 +24,10 @@ body section:not(#home) {
     padding-top: 80px;
 }
 
+.display-none {
+    display: none;
+}
+
 .red, .introheading {
     color: #772432;
 }
@@ -341,11 +345,11 @@ nav {
 }
 
 /********   Education section styles    ********/
-.education-item i {
+.education-item div {
     font-size: 8em;
     color: rgba(119, 36, 50, 0.2);
     position: absolute;
-    top: 15px;
+    top: -40px;
     right: 0;
     z-index: 0;
   }
@@ -354,6 +358,11 @@ nav {
     padding-top: 80px;
     padding-bottom: 70px;
 }
+
+#training-material img {
+    padding: 10px;
+}
+
 
 /********   Contact Us section styles    ********/
 .contact-address li{
