@@ -7,7 +7,6 @@ $(window).scroll(function() {
         $(".navbar").removeClass("navbar-dark").addClass("navbar-light bg-light nav-shadow");
         $("#godiva").addClass("red");
         $("#speakers").addClass("blue");
-        $(".na")
     } else {
         $(".nav-margin").css("margin", "15px 0");
         $(".navbar-brand").css({
@@ -26,12 +25,16 @@ $('.navbar-nav li').click(function(){
     $(this).addClass('active');
 });
 
+// scroll spy
+$("body").scrollspy({ target: "#navbar" });
+// toggle navbar item active class based on scroll spy
+
 
 // smooth scrolling
 $(".navbar-nav li a, footer nav li a, .navbar-brand").on("click", function (e) {
     e.preventDefault();
 
-    var spaceOffset = 10; // you may change this value as needed
+    var spaceOffset = 0; // you may change this value as needed
     $("html,body").animate(
         {
             scrollTop: $(this.hash).offset().top - spaceOffset
