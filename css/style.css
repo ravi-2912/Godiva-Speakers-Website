@@ -85,9 +85,7 @@ body section:not(#home) {
     color: white;
 }
 
-section .container:first-of-type {
-    padding-bottom: 20px;
-}
+
 
 .display-4, .display-5 {
     font-weight: 100;
@@ -243,7 +241,7 @@ nav {
     position: absolute;
     left: 50%;
     margin-left: -13px;
-    bottom: 5em;
+    bottom: 3em;
     z-index: 9;
 }
 
@@ -345,6 +343,55 @@ nav {
     margin-bottom: 35px;
 }
 
+#tm-logo {
+    z-index: -1;
+    position: relative;
+    top: -10%;
+    right: -10%;
+    transform: scale(0.5);
+    opacity: 0.3;
+}
+
+.officers {
+    margin-top: 25px;
+}
+
+.officer-card {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.officer-image img {
+    min-width: 190px;
+    min-height: 200px;
+}
+
+.officer-bio {
+    padding-left: 15px;
+}
+
+.officer-card .name {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.officer-card .title {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(119, 36, 50, 0.6);
+    padding-top: 10px;
+}
+
+.officer-bio .brief {
+    padding-top: 5px;
+    font-size: 1rem;
+}
+.officer-card img {
+    padding: 0;
+}
+
+
 /********   Education section styles    ********/
 .education-item div {
     font-size: 8em;
@@ -356,7 +403,7 @@ nav {
   }
 
 #training-material {
-    padding-top: 80px;
+    padding-top: 25px;
     padding-bottom: 70px;
 }
 

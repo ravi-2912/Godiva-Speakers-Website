@@ -49,6 +49,22 @@ $(".navbar-nav li a, footer nav li a, .navbar-brand, #mouse a").on("click", func
         );
       }
 });
+
+// Owl Carousel
+$(".owl-carousel").owlCarousel({
+    loop:true,
+    margin:15,
+    nav:true,
+    responsive:{
+        992:{
+            items:2
+        },
+        0: {
+            items:1
+        }
+    }
+});
+
 /*
 $(window).bind('load resize', function() {
     if( $(window).width() < 769 ) {

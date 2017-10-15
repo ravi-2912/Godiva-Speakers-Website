@@ -22,6 +22,9 @@
 
         <!-- Animate CSS -->
         <link rel="stylesheet" href="css/vendor/wow/animate.css">
+
+        <!-- Owl Carousell CSS -->
+        <link rel="stylesheet" href="css/vendor/owl/owl.carousel.min.css">
     
     </head>
 
@@ -68,17 +71,17 @@
 
         <!-- Home section -->
         <section id="home">
-            <div id="carousel-container" class="container-fluid">
-                <div id="mouse">
-                    <a href="#about">
-                        <svg width="26px" height="60px">
-                            <rect x="1" y="1" fill="none" stroke-width="2" width="24" height="46" rx="12" ry="12"></rect>
-                        </svg>
-                        <i></i>
-                    </a>                    
-                </div>
+            <div id="carousel-container" class="container-fluid">                
                 <div id="carousel" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
+                    <div id="mouse">
+                        <a href="#about">
+                            <svg width="26px" height="60px">
+                                <rect x="1" y="1" fill="none" stroke-width="2" width="24" height="46" rx="12" ry="12"></rect>
+                            </svg>
+                            <i></i>
+                        </a>                    
+                    </div>
+                    <ol class="carousel-indicators">                        
                         <li data-target="#carousel" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel" data-slide-to="1"></li>
                         <li data-target="#carousel" data-slide-to="2"></li>
@@ -162,6 +165,9 @@
                         <p>
                             The Godiva Speakers Club belongs to <a href="https://www.toastmasters.org/" target="_blank">Toastmasters International</a>. The International mission is to provide a mutually supportive environment where members can practice their leadership and speaking skills.
                         </p>
+                        <!--<div id="tm-logo">
+                            <img src="img_src/tm-logo-red.jpg" class="img-fluid" alt="Toastmasters Internation Logo">
+                        </div>-->
                     </div>
                     <div class="col-md-6">
                         <h3 class="heading-2">OUR VALUES</h3>
@@ -184,6 +190,48 @@
                             </li>
                         </ul>
                     </div>
+                </div>
+                <div class="officers">
+                    <h3 class="heading-2">OUR CLUB OFFICERS</h3>
+                    <div class="owl-carousel owl-theme">
+                        <div class="officer-card">
+                            <div class="officer-image">
+                                <img src="img_src/team1.png" alt="Fry" class="img-fluid">
+                            </div>
+                            <div class="officer-bio">
+                                <h4 class="name"><b>Fry Lunacolada1</b></h4>
+                                <h5 class="title">Club President</h5>
+                                <p class="brief">
+                                        Duo alii civibus nostrum eu. Appetere vulputate no vim, ad usu nihil assueverit, suscipit ponderum posidonium mea ea. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="officer-card">
+                            <div class="officer-image">
+                                <img src="img_src/team1.png" alt="Fry" class="img-fluid">
+                            </div>
+                            <div class="officer-bio">
+                                <h4 class="name"><b>Fry Lunacolada2</b></h4>
+                                <h5 class="title">Club President</h5>
+                                <p class="brief">
+                                        Duo alii civibus nostrum eu. Appetere vulputate no vim, ad usu nihil assueverit, suscipit ponderum posidonium mea ea.                                        
+                                </p>
+                            </div>
+                        </div>
+                        <div class="officer-card">
+                            <div class="officer-image">
+                                <img src="img_src/team1.png" alt="Fry" class="img-fluid">
+                            </div>
+                            <div class="officer-bio">
+                                <h4 class="name"><b>Fry Lunacolada3</b></h4>
+                                <h5 class="title">Club President</h5>
+                                <p class="brief">
+                                        Duo alii civibus nostrum eu. Appetere vulputate no vim, ad usu nihil assueverit, suscipit ponderum posidonium mea ea.                                        
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -363,10 +411,14 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
         <!-- WOW JavaScrip -->
-        <script src="js/vendor/wow/wow.js"></script>
+        <script src="js/vendor/wow/wow.min.js"></script>
         <script>new WOW().init()</script>
         
+        <!-- Owl Carousel JavaScritp -->
+        <script src="js/vendor/owl/owl.carousel.min.js"></script>
+
         <!-- Godiva Speakers JavaScript -->
         <script src="js/behaviour.js"></script>
+        
     </body>
 </html>
