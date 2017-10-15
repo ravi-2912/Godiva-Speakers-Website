@@ -19,28 +19,35 @@ $(window).scroll(function() {
     }
 });
 
-// toggling active class for navbar menu
+// toggling active class for navbar menu on click event
 $('.navbar-nav li').click(function(){
     $('.navbar-nav li').removeClass('active');
     $(this).addClass('active');
 });
 
-// scroll spy
-$("body").scrollspy({ target: "#navbar" });
-// toggle navbar item active class based on scroll spy
-
-
 // smooth scrolling
-$(".navbar-nav li a, footer nav li a, .navbar-brand").on("click", function (e) {
-    e.preventDefault();
+$(".navbar-nav li a, footer nav li a, .navbar-brand, #mouse a").on("click", function (e) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
 
-    var spaceOffset = 0; // you may change this value as needed
-    $("html,body").animate(
-        {
-            scrollTop: $(this.hash).offset().top - spaceOffset
-        }, 
-        800
-    );
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $("html,body").animate(
+            {
+                scrollTop: $(hash).offset().top
+            }, 
+            600,
+            function() {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            }
+        );
+      }
 });
 /*
 $(window).bind('load resize', function() {
