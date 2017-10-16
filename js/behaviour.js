@@ -51,7 +51,7 @@ $(".navbar-nav li a, footer nav li a, .navbar-brand, #mouse a").on("click", func
 });
 
 // Owl Carousel
-$(".owl-carousel").owlCarousel({
+$(".officers .owl-carousel").owlCarousel({
     loop: true,
     margin: 15,
     dots: true,
@@ -70,54 +70,40 @@ $(".owl-carousel").owlCarousel({
 });
 
 // Change TM Manual images by fading in and out
-var Min = 1;
-var Max = 48;
-var oldArr = [-1, -1, -1, -1, -1, -1];
-var i = 1;
-var rand = function () {
-    return  Math.floor(Math.random() * (Max - Min + 1)) + Min;
+var rand = function (min, max) {
+    return  Math.floor(Math.random() * (max - min + 1)) + min;
 };
+var N = 48;
+var i = 1;
 var iter = function() {
-    var id = (i++).toString();
-    if (i < 10) {
+    var id = i.toString();
+    if (i++ < 10) {
         id = "0" + id; 
     }
     return "img_src/" + id + ".jpg";
 };
-
-var manualImgArray = Array.apply(null, {length: Max}).map( Function.call, iter);
-var newArr = [-1, -1, -1, -1, -1, -1];
-
-oldArr = newArr.slice(); 
-
-setInterval(function(){
-    var l = 0;
-    while(l < 6){
-        var randomnumber = rand();
-        if(newArr.indexOf(randomnumber) > -1) continue;
-        newArr[l++] = randomnumber;
+var manualImgArray = Array.apply(null, {length: N}).map( Function.call, iter);
+var HTMLImgCode = "<img src=\"%img_src%\" class=\"img-fluid\" alt=\"%img_alt%\">";
+for(i = 0; i < N; i++) {
+    var string = HTMLImgCode.replace("%img_src%", manualImgArray[i]).replace("%img_alt%", "Toastmasters\' Manual");
+    $("#training-material .owl-carousel").append(string);
+}
+$("#training-material .owl-carousel").owlCarousel({
+    loop: true,
+    margin: 15,
+    dots: true,
+    responsive:{
+        992: {
+            items: 6
+        },
+        0: {
+            items: 4
+        }
     }
-    // UGLY CODE - RESOLVE THIS
-    $("#training-material img").eq(0).fadeOut(800, function() {
-        $("#training-material img").eq(0).attr("src",manualImgArray[newArr[0]]);
-        }).fadeIn(800);
-    $("#training-material img").eq(1).fadeOut(800, function() {
-        $("#training-material img").eq(1).attr("src",manualImgArray[newArr[1]]);
-        }).fadeIn(800);
-    $("#training-material img").eq(2).fadeOut(800, function() {
-        $("#training-material img").eq(2).attr("src",manualImgArray[newArr[2]]);
-        }).fadeIn(800);
-    $("#training-material img").eq(3).fadeOut(800, function() {
-        $("#training-material img").eq(3).attr("src",manualImgArray[newArr[3]]);
-        }).fadeIn(800);
-    $("#training-material img").eq(4).fadeOut(800, function() {
-        $("#training-material img").eq(4).attr("src",manualImgArray[newArr[4]]);
-        }).fadeIn(800);
-    $("#training-material img").eq(5).fadeOut(800, function() {
-        $("#training-material img").eq(5).attr("src",manualImgArray[newArr[5]]);
-        }).fadeIn(800);
-    
-}, 7000);
+});
+
+
+
 /*
 $(window).bind('load resize', function() {
     if( $(window).width() < 769 ) {
