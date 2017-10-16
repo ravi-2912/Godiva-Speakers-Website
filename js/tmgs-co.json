@@ -2,13 +2,43 @@
     {
         "img": "img_src/co/jb.png",
         "name": "John Bell",
-        "title": "Club President",
+        "title": "President",
         "brief": "dfnoidgndpigbenp e o geobg oefbg oebgoeno eog negnore gnpe owgbo e oeg n sp npw "
     },
     {
         "img": "img_src/co/jm.png",
         "name": "Jane Moss",
         "title": "Vice President Education",
+        "brief": "dfnoidgndpigbenp e o geobg oefbg oebgoeno eog negnore gnpe owgbo e oeg n sp npw "
+    },
+    {
+        "img": "img_src/co/sm.png",
+        "name": "Saqib Moosa",
+        "title": "Vice President Membership",
+        "brief": "dfnoidgndpigbenp e o geobg oefbg oebgoeno eog negnore gnpe owgbo e oeg n sp npw "
+    },
+    {
+        "img": "img_src/co/rs.png",
+        "name": "Ravinder Singh",
+        "title": "Vice President Public Relations",
+        "brief": "dfnoidgndpigbenp e o geobg oefbg oebgoeno eog negnore gnpe owgbo e oeg n sp npw "
+    },
+    {
+        "img": "img_src/co/js.png",
+        "name": "Jatinder Singh",
+        "title": "Treasurer",
+        "brief": "dfnoidgndpigbenp e o geobg oefbg oebgoeno eog negnore gnpe owgbo e oeg n sp npw "
+    },
+    {
+        "img": "img_src/co/dw.png",
+        "name": "David Mwangi",
+        "title": "Sergeant at Arms",
+        "brief": "dfnoidgndpigbenp e o geobg oefbg oebgoeno eog negnore gnpe owgbo e oeg n sp npw "
+    },
+    {
+        "img": "img_src/co/jm.png",
+        "name": "XYZ XYZ",
+        "title": "Secretary",
         "brief": "dfnoidgndpigbenp e o geobg oefbg oebgoeno eog negnore gnpe owgbo e oeg n sp npw "
     }
 ]
