@@ -26,7 +26,7 @@ $('.navbar-nav li').click(function(){
 });
 
 // smooth scrolling
-$(".navbar-nav li a, footer nav li a, .navbar-brand, #mouse a").on("click", function (e) {
+$(".navbar-nav li a, footer nav li a, .navbar-brand, #mouse a, .pricing-table a").on("click", function (e) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
         // Prevent default anchor click behavior
@@ -96,8 +96,14 @@ $("#training-material .owl-carousel").owlCarousel({
         992: {
             items: 6
         },
-        0: {
+        767: {
             items: 4
+        },
+        575: {
+            items: 2
+        },
+        0: {
+            items: 1
         }
     }
 });

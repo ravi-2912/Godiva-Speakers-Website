@@ -1,5 +1,5 @@
 /********   Common styles    ********/
-@import url('https://fonts.googleapis.com/css?family=Enriqueta:400,700|Roboto:100,300,400');
+@import url('https://fonts.googleapis.com/css?family=Enriqueta:400,700|Roboto:100,300,400,500');
 
 body {
     font-family: "Enriqueta", serif;
@@ -69,6 +69,7 @@ body section:not(#home) {
     border-radius: 3px;
     letter-spacing: 0.1em;
     color: white;
+    line-height: 1.5;
 }
 
 .btn:hover {
@@ -404,13 +405,139 @@ nav {
 
 #training-material {
     padding-top: 25px;
-    padding-bottom: 70px;
+    /*padding-bottom: 70px;*/
 }
 
 #training-material img {
     padding: 10px;
 }
 
+
+/********   Membership section styles   *********/
+.pricing-table {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 20px;
+    border: 1px solid #b4b4b4;
+}
+
+.pricing-table .header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.pricing-table .title {
+    margin-bottom: 5px;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 500;
+}
+
+.pricing-table .description {
+    display: block;
+    font-size: 15px;
+    line-height: 1.3;
+    color: #b6b6b6;
+}
+
+.pricing-table .price {
+    padding: 30px 0;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+.pricing-table .price .amount {
+    position: relative;
+    font-size: 64px;
+    font-weight: 100;
+    line-height: 1;
+}
+
+.pricing-table .price .sign {
+    position: absolute;
+    top: 20px;
+    left: -12px;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.pricing-table .price .term {
+display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+    line-height: 1;
+    color: #B4B4B4;
+}
+
+.pricing-table .list-detail {
+    margin: 35px 0;
+}
+
+.pricing-table .list-detail li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.pricing-table .list-detail li:last-child {
+    margin-bottom: 0;
+}
+
+.pricing-table .list-detail li i {
+    margin-right: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #004165;
+}
+
+.pricing-table .btn {
+    margin-bottom: 8px;
+}
+  
+.pricing-table .triangle {
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-left-width: 60px;
+    border-right-width: 0px;
+    border-top: 60px solid #004165;
+    position: absolute;
+    top: 0;
+    right: 15px;
+}
+  
+.pricing-table .triangle i {
+    position: absolute;
+    right: 4px;
+    top: -55px;
+    font-size: 22px;
+    color: #fff;
+}
+
+.pricing-table .btn {
+    border: 1px solid #5f5f5f;
+    padding: 10px 30px;
+    font-family: "Roboto", sans-serif;
+    color: #5f5f5f;
+}
+
+.pricing-table .btn-blue {
+    border: 1px solid #004165;
+    padding: 10px 30px;
+    color: white;
+    font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    
+    letter-spacing: 0.1em;
+}
+
+@media screen and (max-width: 767px) {
+    .pricing-table {
+      margin-bottom: 30px;
+    }
+}
 
 /********   Contact Us section styles    ********/
 .contact-address li{
