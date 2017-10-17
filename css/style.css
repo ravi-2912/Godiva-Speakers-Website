@@ -357,11 +357,6 @@ nav {
     margin-top: 25px;
 }
 
-.officer-card {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
 .officer-image img {
     min-width: 190px;
     min-height: 200px;
