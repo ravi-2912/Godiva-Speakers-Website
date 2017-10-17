@@ -20,8 +20,8 @@ $(window).scroll(function() {
 });
 
 // toggling active class for navbar menu on click event
-$('.navbar-nav li').click(function(){
-    $('.navbar-nav li').removeClass('active');
+$('.navbar-nav li a').click(function(){
+    $('.navbar-nav li a').removeClass('active');
     $(this).addClass('active');
 });
 
