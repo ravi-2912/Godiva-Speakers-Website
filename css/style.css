@@ -195,12 +195,12 @@ nav {
 }
 
 #carousel img {
-    object-fit: none;
+    object-fit: cover;
     object-position: center;
     height: 100vh;
     -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
     filter: blur(5px);
-    transform: scale(1.01);
+    transform: scale(1.05);
 }
 
 #carousel-container {
