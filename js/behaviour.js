@@ -88,10 +88,12 @@ for(i = 0; i < N; i++) {
     var string = HTMLImgCode.replace("%img_src%", manualImgArray[i]).replace("%img_alt%", "Toastmasters\' Manual");
     $("#training-material .owl-carousel").append(string);
 }
-$("#training-material .owl-carousel").owlCarousel({
+
+var owl = $("#training-material .owl-carousel").owlCarousel({
     loop: true,
     margin: 15,
-    dots: true,
+    nav: true,
+    dots: false,
     responsive:{
         992: {
             items: 6
@@ -107,7 +109,14 @@ $("#training-material .owl-carousel").owlCarousel({
         }
     }
 });
-
+owl.on("mousewheel", ".owl-stage", function (e) {
+    if (e.deltaY > 0) {
+        owl.trigger("next.owl");
+    } else {
+        owl.trigger("prev.owl");
+    }
+    e.preventDefault();
+});
 
 
 /*
