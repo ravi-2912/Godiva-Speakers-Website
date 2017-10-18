@@ -416,7 +416,12 @@ nav {
     background: rgba(255, 255, 255, 0.7);
 }
 
-.club .item address [class*="ti-"]:before {
+#our-club .card-img-overlay {
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.3),0 6px 20px 0 rgba(0,0,0,0.3) !important;
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.club address [class*="ti-"]:before {
     font-size: 50px;
     color: rgba(119, 36, 50, 0.7);
 }
