@@ -8,11 +8,19 @@ $(window).scroll(function() {
         $("#godiva").addClass("red");
         $("#speakers").addClass("blue");
     } else {
-        $(".nav-margin").css("margin", "15px 0");
-        $(".navbar-brand").css({
-            "font-size": "2.25rem",
-            "color": "white"
-        });
+        if (screen.width <= 767) {
+            $(".nav-margin").css("margin", "0");
+            $(".navbar-brand").css({
+                "font-size": "1.75rem",
+                "color": "white"
+            });
+        } else {
+            $(".nav-margin").css("margin", "15px 0");
+            $(".navbar-brand").css({
+                "font-size": "2.25rem",
+                "color": "white"
+            });
+        }
         $(".navbar").removeClass("navbar-light bg-light nav-shadow").addClass("navbar-dark");
         $("#godiva").removeClass("red");
         $("#speakers").removeClass("blue");

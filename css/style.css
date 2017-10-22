@@ -142,6 +142,20 @@ nav {
     transition: font 500ms;
 }
 
+@media screen and (max-width: 767px) {
+    nav {
+        line-height: 1;
+    }
+
+    .nav-margin {
+        margin: 0;
+    }
+
+    .navbar-brand {
+        font-size: 1.75rem;
+    }
+}
+
 .navbar-nav {
     letter-spacing: 0.03rem;
 }
