@@ -421,7 +421,11 @@ nav {
     background: rgba(255, 255, 255, 0.75);
 }
 
-.club address [class*="ti-"]:before {
+.club [class*="ti-"]:before {
+    font-size: 42px;
+}
+
+#calendar [class*="ti-"]:before {
     font-size: 50px;
     color: rgba(119, 36, 50, 0.7);
 }
