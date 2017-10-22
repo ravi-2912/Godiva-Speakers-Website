@@ -50,7 +50,7 @@ $(".navbar-nav li a, footer nav li a, .navbar-brand, #mouse a, .pricing-table a"
       }
 });
 
-// Owl Carousel
+// Club Officers owl Carousel
 $(".officers .owl-carousel").owlCarousel({
     loop: true,
     margin: 15,
@@ -70,53 +70,55 @@ $(".officers .owl-carousel").owlCarousel({
 });
 
 // Change TM Manual images by fading in and out
-var rand = function (min, max) {
-    return  Math.floor(Math.random() * (max - min + 1)) + min;
-};
-var N = 48;
-var i = 1;
-var iter = function() {
-    var id = i.toString();
-    if (i++ < 10) {
-        id = "0" + id; 
-    }
-    return "img_src/" + id + ".jpg";
-};
-var manualImgArray = Array.apply(null, {length: N}).map( Function.call, iter);
-var HTMLImgCode = "<img src=\"%img_src%\" class=\"img-fluid\" alt=\"%img_alt%\">";
-for(i = 0; i < N; i++) {
-    var string = HTMLImgCode.replace("%img_src%", manualImgArray[i]).replace("%img_alt%", "Toastmasters\' Manual");
-    $("#training-material .owl-carousel").append(string);
-}
-
-var owl = $("#training-material .owl-carousel").owlCarousel({
-    loop: true,
-    margin: 15,
-    nav: true,
-    dots: false,
-    responsive:{
-        992: {
-            items: 6
-        },
-        767: {
-            items: 4
-        },
-        575: {
-            items: 2
-        },
-        0: {
-            items: 1
+(function () {
+    var rand = function (min, max) {
+        return  Math.floor(Math.random() * (max - min + 1)) + min;
+    };
+    var N = 48;
+    var i = 1;
+    var iter = function() {
+        var id = i.toString();
+        if (i++ < 10) {
+            id = "0" + id; 
         }
+        return "img_src/" + id + ".jpg";
+    };
+    var manualImgArray = Array.apply(null, {length: N}).map( Function.call, iter);
+    var HTMLImgCode = "<img src=\"%img_src%\" class=\"img-fluid\" alt=\"%img_alt%\">";
+    for(i = 0; i < N; i++) {
+        var string = HTMLImgCode.replace("%img_src%", manualImgArray[i]).replace("%img_alt%", "Toastmasters\' Manual");
+        $("#training-material .owl-carousel").append(string);
     }
-});
-owl.on("mousewheel", ".owl-stage", function (e) {
-    if (e.deltaY > 0) {
-        owl.trigger("next.owl");
-    } else {
-        owl.trigger("prev.owl");
-    }
-    e.preventDefault();
-});
+
+    var owl = $("#training-material .owl-carousel").owlCarousel({
+        loop: true,
+        margin: 15,
+        nav: true,
+        dots: false,
+        responsive:{
+            992: {
+                items: 6
+            },
+            767: {
+                items: 4
+            },
+            575: {
+                items: 2
+            },
+            0: {
+                items: 1
+            }
+        }
+    });
+    owl.on("mousewheel", ".owl-stage", function (e) {
+        if (e.deltaY > 0) {
+            owl.trigger("next.owl");
+        } else {
+            owl.trigger("prev.owl");
+        }
+        e.preventDefault();
+    });
+}());
 
 
 /*
