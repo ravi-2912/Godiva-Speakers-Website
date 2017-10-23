@@ -288,6 +288,20 @@ nav {
     -webkit-animation: scrollBouncing 2s ease-out infinite;
     animation: scrollBouncing 2s ease-out infinite;
 }
+
+@media screen and (max-width: 575px) {
+    #mouse {
+        display: none;
+    }
+
+    .carousel-item h1.display-4 {
+        font-size: 3rem;
+    }
+
+    .carousel-item h1.display-5 {
+        font-size: 2rem;
+    }
+}
   
 @keyframes scrollBouncing {
     0% {
@@ -339,7 +353,7 @@ nav {
 #hero2 {
     position: absolute;
     top: 20%;
-    right: 10%;    
+       
 }
 
 #hero3 {
@@ -347,6 +361,25 @@ nav {
     top: 20%;
     left:50%;
     transform: translateX(-50%);
+}
+@media screen and (min-width: 578px) {
+    #hero2 {
+        right: 10%; 
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #hero1, #hero2, #hero3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .carousel-item .container .jumbotron {
+        padding: 2rem;
+    }
+
 }
 
 /********   About section styles    ********/
@@ -382,10 +415,6 @@ nav {
     min-height: 200px;
 }
 
-.officer-bio {
-    padding-left: 15px;
-}
-
 .officer-card .name {
     font-size: 1.375rem;
     font-weight: 400;
@@ -402,9 +431,6 @@ nav {
 .officer-bio .brief {
     padding-top: 5px;
     font-size: 1rem;
-}
-.officer-card img {
-    padding: 0;
 }
 
 
@@ -451,39 +477,22 @@ nav {
 }
 
 /********   Membership section styles   *********/
-.pricing-table {
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    padding: 20px;
-    border: 1px solid #b4b4b4;
-}
-
-.pricing-table .header {
-    text-align: center;
-    margin-bottom: 15px;
-}
-
 .pricing-table .title {
-    margin-bottom: 5px;
     font-size: 1.25rem;
     line-height: 1;
     font-weight: 500;
 }
 
 .pricing-table .description {
-    display: block;
     font-size: 0.9375rem;
     line-height: 1.3;
     color: #b6b6b6;
 }
 
 .pricing-table .price {
-    padding: 30px 0;
     border-top: 1px solid #eaeaea;
     border-bottom: 1px solid #eaeaea;
     font-family: "Roboto", sans-serif;
-    text-align: center;
 }
 
 .pricing-table .price .amount {
